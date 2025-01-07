@@ -7,7 +7,6 @@
 
 void *os_malloc(size_t size)
 {
-	/* TODO: Implement os_malloc */
 	if (!size)
 		return NULL;
 
@@ -48,7 +47,6 @@ void *os_malloc(size_t size)
 
 void os_free(void *ptr)
 {
-	/* TODO: Implement os_free */
 	if (ptr != NULL) {
 		struct block_meta *ptr_free;
 
@@ -73,7 +71,6 @@ void os_free(void *ptr)
 
 void *os_calloc(size_t nmemb, size_t size)
 {
-	/* TODO: Implement os_calloc */
 	if (nmemb == 0 || size == 0)
 		return NULL;
 
@@ -116,7 +113,6 @@ void *os_calloc(size_t nmemb, size_t size)
 
 void *os_realloc(void *ptr, size_t size)
 {
-	/* TODO: Implement os_realloc */
 	if (!ptr)
 		return os_malloc(size);
 
